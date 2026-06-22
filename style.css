@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: lightgrey;
+  font-family: "Lato", sans-serif;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+button {
+  margin: 5px;
+  text-align: center;
+}
+
+#container {
+  width: 50%;
+  min-width: 300px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+#header > * {
+  display: inline-block;
+}
+#ver {
+  font-size: xx-small;
+}
+
+#data {
+  display: flex;
+  flex-direction: column;
+}
+.dataRow {
+  width: 100%;
+  height: 40px;
+  /* background-color: white; */
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.dataRow button:nth-child(1) {
+  background-color: lightpink;
+}
+
+.dataRow button:nth-child(6),
+.dataRow button:nth-child(7) {
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+}
+
+.dataRow button:nth-child(8) {
+  max-width: 50px;
+  min-width: 60px;
+}
+.dataRow > input:nth-child(2),
+.dataRow > input:nth-child(3) {
+  margin: 2px;
+  width: 100%;
+}
+.dataRow > input:nth-child(5) {
+  margin: 2px;
+  width: 40px;
+}
+.dataRow > span {
+  margin: 2px;
+  max-width: 100px;
+  min-width: 70px;
+  /* width: 100px; */
+  background-color: white;
+  text-align: center;
+}
+.active {
+  background-color: palegreen;
+}
+.inactive {
+  background-color: darkgrey;
+}
+
+#action {
+  /* reserved */
+}
+#btnAdd {
+  background-color: green;
+}
+#btnReport {
+  background-color: bisque;
+}
+#btnDeleteAll {
+  background-color: coral;
+}
+#btnSaveToFile {
+  background-color: lightgreen;
+}
+
+#btnDevMode {
+  background-color: rgb(238, 144, 224);
+}
+
+#display {
+  background-color: #eee;
+  border-color: #444;
+  border: 1px solid;
+  min-height: 50px;
+}
